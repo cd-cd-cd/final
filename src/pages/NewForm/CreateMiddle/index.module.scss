@@ -1,0 +1,51 @@
+.back{
+  width: 776px;
+  background-color: #fff;
+  border: 1px solid #e7e9eb;
+  padding: 50px 66px;
+  height: calc(100vh - 120px);
+  overflow: auto;
+}
+
+.form{
+  text-align: center;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.placeholder_center{
+  padding-bottom: 10px;
+  text-align: center;
+  border: #f2f4f7;
+
+}
+
+.line{
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+}
+
+.line:hover{
+  border-bottom: 2px solid #f2f4f7;
+}
+
+.box {
+  width: 529px;
+  padding: 20px 24px;
+  margin: 20px auto 0 auto;
+}
+
+.click_box {
+  width: 529px;
+  padding: 20px 24px;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 4px 16px 0 rgb(192 198 207 / 50%);
+  border: 2px;
+  border-radius: 2px;
+}

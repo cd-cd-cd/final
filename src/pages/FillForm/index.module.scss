@@ -1,0 +1,88 @@
+@mixin flex_row {
+  display: flex;
+  flex-direction: row;
+}
+.box{
+  height: 100vh;
+}
+.header {
+  @include flex_row();
+  background-color: #fff;
+  justify-content: space-between;
+  height: 56px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid #e7e9eb;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+
+  .header_left {
+    @include flex_row();
+    align-items: center;
+
+    .logoIcon {
+      width: 20px;
+    }
+
+    .span {
+      font-size: 18px;
+      font-weight: 500;
+      color: #3c414b;
+      margin: .67em 0;
+      cursor: pointer;
+      margin-left: 8px
+    }
+  }
+}
+
+.fillForm_back{
+  background-color: #f2f4f7;
+  padding-top: 70px;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100%;
+
+  .page{
+    width: 776px;
+    min-height: 100%;
+    padding: 48px 102px;
+    background-color: #fff;
+  }
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  color: #3d4757;
+  font-weight: 700;
+}
+
+.subTitle {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.question {
+  padding: 24px 0;
+}
+
+.btn_box{
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 800px)  {
+  .fillForm_back{
+    width: 100%;
+    
+    .page{
+      width: 90%;
+      padding: 40px 20px;
+    }
+  }
+}

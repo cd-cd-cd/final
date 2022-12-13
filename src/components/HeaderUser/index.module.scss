@@ -1,0 +1,32 @@
+@mixin flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.header_right{
+  @include flex_row();
+  align-items: center;
+  cursor: pointer;
+
+  .box{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    @include flex_row();
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    .avatar{
+      width: 30px;
+    }
+  }
+
+  .nickname{
+    font-size: 14px;
+    color: #626b84;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+}

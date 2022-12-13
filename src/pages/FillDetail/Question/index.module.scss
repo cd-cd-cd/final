@@ -1,0 +1,25 @@
+.back{
+  width: 944px;
+  min-height: 100vh;
+  background-color: #fff;
+  margin: 5px auto 0 auto;
+  padding: 148px 194px 150px 194px;
+}
+
+.fill_form{
+  display: block;
+  width: 944px;
+  height: 130px;
+  line-height: 130px;
+  background-color: #fff;
+  color: #1488ed;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: calc(50% - 472px);
+
+  .fill{
+    cursor: pointer;
+  }
+}

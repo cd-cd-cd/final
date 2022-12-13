@@ -1,0 +1,130 @@
+@mixin flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.newForm {
+  background-color: #f2f4f7;
+  height: 100vh;
+}
+
+.header {
+  @include flex_row();
+  background-color: #fff;
+  justify-content: space-between;
+  height: 56px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid #e7e9eb;
+
+  .header_left {
+    @include flex_row();
+    align-items: center;
+
+    .span {
+      font-size: 18px;
+      font-weight: 500;
+      color: #3c414b;
+      margin: .67em 0;
+      cursor: pointer;
+      margin-left: 8px
+    }
+  }
+}
+
+.form {
+  width: 760px;
+  height: 650px;
+  padding: 48px 102px 90px 102px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow: auto;
+
+  // .title {
+  //   font-size: 20px;
+  //   text-align: center;
+  //   color: #3d4757;
+  //   font-weight: 700;
+  // }
+
+  // .subTitle {
+  //   text-align: center;
+  //   margin: 40px 0;
+  // }
+}
+
+// .question {
+//   padding: 24px 0;
+// }
+
+// .question {
+//   padding: 24px 0;
+
+//   .rank {
+//     color: #3d4757;
+//     font-family: Arial;
+//     font-size: 14px;
+//     font-weight: 700;
+//     display: inline-block;
+//   }
+
+//   .question_title {
+//     display: inline-block;
+//     text-indent: 10px;
+//     color: #3d4757;
+//     font-family: Arial;
+//     font-size: 14px;
+//     font-weight: 700;
+//   }
+// }
+
+// .box {
+//   margin-top: 20px;
+//   border-bottom: 1px solid rgba(25, 55, 88, .1);
+// }
+
+// .box:hover {
+//   border-bottom: 1px solid #1890ff;
+// }
+
+// .basic_box {
+//   margin-top: 20px;
+// }
+
+// .group {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   grid-row-gap: 20px;
+// }
+
+// .multi_label {
+//   color: rgba(0, 0, 0, .4);
+//   font-weight: normal;
+//   margin-left: 3px;
+//   margin-right: -2px;
+// }
+
+// .require {
+//   color: #eb5451;
+//   position: relative;
+//   left: -10px;
+//   margin-right: -8px;
+// }
+
+// .disable_btn_box {
+//   width: 92px;
+//   margin: 0 auto;
+// }
+
+.btn_box {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .btn {
+    width: 156px;
+    margin: 0 10px;
+  }
+}

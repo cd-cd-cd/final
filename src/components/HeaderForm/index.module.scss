@@ -1,0 +1,32 @@
+@mixin flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.header{
+  @include flex_row();
+  background-color: #fff;
+  justify-content: space-between;
+  height: 56px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid #e7e9eb;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  .header_left{
+    @include flex_row();
+    align-items: center;
+
+    .span{
+      font-size: 18px;
+      font-weight: 500;
+      color: #3c414b;
+      margin: .67em 0;
+      cursor: pointer;
+      margin-left: 8px
+    }
+  }
+}

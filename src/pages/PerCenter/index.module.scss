@@ -1,0 +1,183 @@
+.header {
+  font-size: 14px;
+  color: #383838;
+  background: #fafafa;
+  box-shadow: 0 1px 0 0 #dbdbdb;
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  padding-left: 25px;
+
+  .wps_span {
+    font-size: 14px;
+    color: #484848;
+    font-weight: 700;
+    padding-right: 5px;
+    cursor: pointer;
+  }
+}
+
+.topBar {
+  max-width: 910px;
+  height: 48px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  .logout {
+    line-height: 48px;
+    font-size: 12px;
+    color: #969696;
+    cursor: pointer;
+  }
+}
+
+.info {
+  height: 230px;
+  max-width: 910px;
+  margin: 0 auto;
+  border: 1px solid #e7e9eb;
+  color: #383838;
+  padding-top: 50px;
+  text-align: center;
+
+  .avatar_box {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+
+    .avatarIcon {
+      width: 80px;
+      height: 80px;
+    }
+
+    &:hover .mask {
+      position: absolute;
+      top: 0px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .6);
+      z-index: 2;
+      text-align: center;
+
+      .change_text {
+        color: #fafafa;
+        font-weight: 700;
+        line-height: 80px;
+      }
+    }
+  }
+
+  .nickName {
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+    margin-top: 15px;
+  }
+
+  .user_id {
+    color: #666;
+    font-size: 12px;
+  }
+}
+
+.container {
+  max-width: 910px;
+  height: 136px;
+  border: 1px solid #e7e9eb;
+  border-radius: 2px;
+  margin: 12px auto 0 auto;
+  padding: 20px 30px;
+
+  .text {
+    font-size: 14px;
+    color: #969696;
+    letter-spacing: -.34px;
+  }
+}
+
+
+.static {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .name {
+    font-size: 16px;
+  }
+
+  .change {
+    font-size: 14px;
+  }
+}
+
+.change_nickName {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  .input {
+    width: 267px;
+    margin-right: auto;
+  }
+
+  .btn {
+    width: 71px;
+    height: 32px;
+    margin-left: 15px;
+  }
+}
+
+.pswInput {
+  margin-top: 5px;
+}
+
+.span {
+  font-size: 12px;
+  color: rgb(233, 118, 99);
+}
+
+.oldBox {
+  display: flex;
+  flex-direction: column;
+  margin-left: -200px;
+
+  .oldImg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .span {
+    color: #626b84;
+    letter-spacing: .2px;
+    font-size: 14px;
+  }
+}
+
+
+.bigBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.upload_box{
+  width: 200px;
+  margin-left: 50px;
+}
+
+.init_box{
+  width: 100px;
+
+  .init_img{
+    width: 100px;
+    height: auto;
+  }
+}

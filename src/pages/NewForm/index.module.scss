@@ -1,0 +1,52 @@
+.newForm{
+  background-color: #f2f4f7;
+  height: 100vh;
+}
+
+.main{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f4f7;
+  padding-top: 70px;
+  justify-content: center;
+}
+
+@mixin flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #f2f4f7;
+}
+
+.footer_top {
+  color: #3d4757;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, STHeitiSC-Light, Microsoft YaHei, "\5FAE\8F6F\96C5\9ED1", SimSun, sans-serif;
+  @include flex_row();
+  justify-content: flex-end;
+
+  .logo {
+    width: 20px;
+    margin-right: 3px;
+  }
+}
+
+.footer_bottom {
+  text-align: center;
+  color: #767c85;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 8fr 1fr 8fr;
+}
